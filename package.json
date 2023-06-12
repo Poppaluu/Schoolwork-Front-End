@@ -1,7 +1,7 @@
 {
-  "name": "front-end-course",
+  "name": "schoolwork-front-end",
   "version": "1.0.0",
-  "description": "Responsive portfolio website",
+  "description": "this is a repo for the LUT school course of software develpment, Skills: Front-End 2022-23",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
