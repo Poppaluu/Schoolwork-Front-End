@@ -73,12 +73,13 @@ main{
 }
 
 .about-info {
+  padding-top: 50px;
     display: grid;
     grid-gap: 30px;
     grid-template-areas:
-      'bioimage bio bio'
-      'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
+      'bioimage bio bio bio'
+      'job1 job2 job3 job4';
+    grid-template-columns: repeat(4, 1fr);
   
     .bio-image {
       grid-area: bioimage;
@@ -94,14 +95,55 @@ main{
   
     .job-1 {
       grid-area: job1;
+      font-size: 1.2rem;
+      h6 {
+        color: rgb(34, 40, 92);
+        margin: auto;
+        font-size: 1rem;
+      }
     }
   
     .job-2 {
       grid-area: job2;
+      font-size: 1.2rem;
+      h3 {
+        span.L {
+          color: #ed174d;
+        }
+      
+        span.U {
+          color: #23b900;
+        }
+
+        span.T {
+          color: #ff8621;
+        }
+      }
+      h6 {
+        color: rgb(34, 40, 92);
+        margin: auto;
+        font-size: 1rem;
+      }
     }
   
     .job-3 {
       grid-area: job3;
+      font-size: 1.2rem;
+      h6 {
+        color: rgb(34, 40, 92);
+        margin: auto;
+        font-size: 1rem;
+      }
+    }
+
+    .job-4 {
+      grid-area: job4;
+      font-size: 1.2rem;
+      h6 {
+        color: rgb(34, 40, 92);
+        margin: auto;
+        font-size: 1rem;
+      }
     }
   
     .job {

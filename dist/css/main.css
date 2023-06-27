@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #1c282b;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: #26373a;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -57,14 +57,14 @@
       height: 250px;
       background: url("../img/profile.jpg");
       border-radius: 50%;
-      border: solid 3px #d1d11b; }
+      border: solid 3px #fc7302; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #d1d11b; }
+      color: #fc7302; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +76,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #d1d11b; }
+      color: #fc7302; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.11s; }
@@ -94,7 +94,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #26373a;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -112,7 +112,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.5); }
+      background: rgba(38, 55, 58, 0.5); }
 
 h1, h2, h3 {
   margin: 0;
@@ -122,7 +122,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(83, 83, 83, 0.5); }
+    background: rgba(50, 73, 76, 0.5); }
 
 a {
   color: #fff;
@@ -134,7 +134,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #d1d11b; }
+  color: #fc7302; }
 
 main {
   padding: 4rem;
@@ -144,7 +144,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #d1d11b;
+        color: #fc7302;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -152,28 +152,57 @@ main {
       margin-top: 20vh; }
 
 .about-info {
+  padding-top: 50px;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: 'bioimage bio bio bio' 'job1 job2 job3 job4';
+  grid-template-columns: repeat(4, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #d1d11b 3px solid; }
+    border: #fc7302 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
-    grid-area: job1; }
+    grid-area: job1;
+    font-size: 1.2rem; }
+    .about-info .job-1 h6 {
+      color: #22285c;
+      margin: auto;
+      font-size: 1rem; }
   .about-info .job-2 {
-    grid-area: job2; }
+    grid-area: job2;
+    font-size: 1.2rem; }
+    .about-info .job-2 h3 span.L {
+      color: #ed174d; }
+    .about-info .job-2 h3 span.U {
+      color: #23b900; }
+    .about-info .job-2 h3 span.T {
+      color: #ff8621; }
+    .about-info .job-2 h6 {
+      color: #22285c;
+      margin: auto;
+      font-size: 1rem; }
   .about-info .job-3 {
-    grid-area: job3; }
+    grid-area: job3;
+    font-size: 1.2rem; }
+    .about-info .job-3 h6 {
+      color: #22285c;
+      margin: auto;
+      font-size: 1rem; }
+  .about-info .job-4 {
+    grid-area: job4;
+    font-size: 1.2rem; }
+    .about-info .job-4 h6 {
+      color: #22285c;
+      margin: auto;
+      font-size: 1rem; }
   .about-info .job {
-    background: #515151;
+    background: #304649;
     padding: 0.5rem;
-    border-bottom: #d1d11b 5px solid; }
+    border-bottom: #fc7302 5px solid; }
 
 .projects {
   display: grid;
@@ -184,7 +213,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.7;
-      border-color: #d1d11b; }
+      border-color: #fc7302; }
 
 .boxes {
   display: flex;
@@ -200,7 +229,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 1rem 1.5rem;
-      background: #d1d11b;
+      background: #fc7302;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -211,7 +240,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #d1d11b;
+    background: #fc7302;
     color: #000; }
 
 .btn-dark {
@@ -225,7 +254,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #2b2b2b;
+  background: #121a1b;
   color: #fff;
   height: 60px; }
 
