@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "this is a repo for the LUT school course of software develpment, Skills: Front-End 2022-23",
   "main": "index.js",
+  "homepage": "https://Poppaluu.github.io/Schoolwork-Front-End",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy":"gh-pages -d dist"
   },
   "author": "Matias Tarvainen",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "node-sass": "^9.0.0"
   }
 }
