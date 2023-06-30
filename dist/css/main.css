@@ -139,7 +139,7 @@ header {
 main {
   padding: 4rem;
   height: 100%;
-  min-height: calc(100vh); }
+  min-height: calc(94vh); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -211,7 +211,7 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    height: 100%;
+    height: 75%;
     /* Maintain aspect ratio */
     object-fit: cover;
     /* Fill the container without distorting */
@@ -272,7 +272,10 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .about-info {
+    grid-template-areas: 'bioimage bioimage' 'bio bio' 'job1 job2' 'job3 job4';
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -301,7 +304,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3' 'job4';
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
