@@ -35,3 +35,20 @@ function toggleMenu(){
 
     }
 }
+
+const contactBoxes = document.querySelectorAll('.contact-box');
+const copyButton = document.getElementById('copy');
+
+contactBoxes.forEach(contactBox => {
+  contactBox.addEventListener('click', () => {
+    copyButton.style.opacity = '1';
+    setTimeout(() => {
+        copyButton.style.opacity = '0';
+      }, 2000); // Delay in milliseconds (2 seconds in this example)
+      const contactText = Array.from(contactBox.childNodes)
+      .filter(node => node.nodeName !== 'SPAN')
+      .map(node => node.textContent.trim())
+      .join('');
+    navigator.clipboard.writeText(contactText)
+  });
+});
