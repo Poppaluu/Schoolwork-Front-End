@@ -5,6 +5,6 @@ How to run is either visit the site https://poppaluu.github.io/Schoolwork-Front-
 
 or
 
-go to the index html file, right click and press run live server which should open the site automaticly.
+go to the index html file, right click and press run live server which should open the site automatically.
 
 This product is made by Matias Tarvainen.
